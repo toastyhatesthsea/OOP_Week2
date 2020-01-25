@@ -1,13 +1,15 @@
 public abstract class Player {
 
-    public abstract String getPPG();
+    public abstract double getPPG();
 
-    public abstract String getHeight();
+    public abstract double getHeight();
 
-    public abstract String getWeight();
+    public abstract double getWeight();
+
+    public abstract String getName();
 
     @Override
     public String toString(){
-        return "RAM= "+this.getPPG()+", HDD="+this.getHeight()+", CPU="+this.getWeight();
+        return "Name: " +this.getName()+", PPG: "+this.getPPG()+", Height: "+this.getHeight()+", Weight: "+this.getWeight();
     }
 }

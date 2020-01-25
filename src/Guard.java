@@ -1,27 +1,50 @@
 public class Guard extends Player {
 
-    private String PPG;
-    private String height;
-    private String weight;
+    private double PPG;
+    private double height;
+    private double weight;
+    private String name;
 
-    public Guard(String PPG, String height, String weight){
+    public Guard(double PPG, double height, double weight, String name){
         this.PPG = PPG;
         this.height = height;
         this.weight = weight;
+        this.name = name;
     }
 
     @Override
-    public String getPPG() {
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public double getPPG() {
         return this.PPG;
     }
 
     @Override
-    public String getHeight() {
+    public double getHeight() {
         return this.height;
     }
 
     @Override
-    public String getWeight() {
+    public double getWeight() {
         return this.weight;
+    }
+
+    public void setPPG(double PPG) {
+        this.PPG = PPG;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
